@@ -67,8 +67,8 @@ body{
     flex-wrap: wrap;
     align-items: center;
     gap: 1.5625rem;
-    width: 100%;;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
 }
 
 .cabecalho__itens__item{
@@ -118,12 +118,13 @@ text-align: center;
 
 .barra__marcas__texto{
     font-family: var(--fonte-primaria);
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: bold;
     color: aliceblue;
     text-align: center;
     margin: 1rem;
 }
+    
 
 .barra__marcas__logos{
     display: flex;
@@ -136,7 +137,7 @@ text-align: center;
 }
 
 .barra__marcas__logos__logo{
-    max-height: 48px;
+    max-height: 1.25rem;
     width: auto;
 }
 
@@ -156,7 +157,7 @@ text-align: center;
 
 .chamada_contato__texto{
     font-family: var(--fonte-primaria);
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: bold;
     color: aliceblue;
     text-align: center;
