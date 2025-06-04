@@ -306,23 +306,6 @@ flex-direction: row;
   }
 
 
-  .cabecalho__itens__item {
-    max-width: 20%;
-    flex-wrap: wrap;
-  }
-
-  .cabecalho__itens__item__icon {
-    max-width: 60%;
-  }
-
-  .cabecalho__itens__item__titulo {
-   font-size: 0.60rem;
-  }
-  
-  .cabecalho__itens__item__texto {
-    font-size: 0.65rem;
-  }
-
   .barra__marcas,
   .chamada_contato {
     max-width: 90%;
