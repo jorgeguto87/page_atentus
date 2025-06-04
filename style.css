@@ -281,12 +281,14 @@ text-align: center;
 
 .cabecalho__texto {
     display: flex;
-flex-direction: row; 
+    flex-direction: row; 
+    justify-content: space-between;
  }
 
   .cabecalho__titulo {
     font-size: 3rem;
     max-width: 60%;
+    height: auto;
   }
 
   .cabecalho__logo {
