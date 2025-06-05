@@ -293,7 +293,7 @@ text-align: center;
   }
 
   .cabecalho__logo {
-    max-width: 10rem;
+    max-width: 13rem;
     min-width: 8rem;
     flex-shrink: 0;
   }
