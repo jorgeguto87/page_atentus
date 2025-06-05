@@ -306,6 +306,14 @@ text-align: center;
   .cabecalho__itens {
     flex-wrap: wrap;
     gap: 1rem;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .cabecalho__itens__item{
+    max-width: 22.5rem;
   }
 
 
