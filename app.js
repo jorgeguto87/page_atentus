@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const nome = form.name.value;
     const email = form.email.value;
     const mensagem = form.message.value;
+    const phone = form.phone.value;
 
     // inserir lógica para enviar o email
 

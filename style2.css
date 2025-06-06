@@ -86,6 +86,28 @@ body {
     flex-wrap: wrap;
 }
 
+.corpo__contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+ }
+
+ .corpo__img{
+    display:flex;
+    width: 65%;
+
+ }
+
+ .corpo__img__imagem__contato {
+    max-width: 30rem;
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
 .corpo__texto {
     display: flex;
     flex-direction: column;
@@ -128,12 +150,79 @@ body {
     border-radius: 1rem;
 }
 
+.formulario {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    width: 100%;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    backdrop-filter: saturate(2);
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 1rem;
+    padding: 1rem;
+    max-width: 43rem;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.formulario__input,
+.formulario__input__mensagem {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.4); /* escurece o campo */
+    color: white;
+    font-size: 1rem;
+}
+
+.formulario__input::placeholder,
+.formulario__input__mensagem::placeholder {
+    font-family: var(--fonte-secundaria);
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.formulario__input__mensagem {
+    height: 150px;
+    resize: none;
+}
+
+.formulario__botao {
+    align-self: flex-end;
+    padding: 0.75rem 2rem;
+    background: linear-gradient(45deg, #0066ff, #00ccff);
+    color: white;
+    font-family: var(--fonte-secundaria);
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.formulario__botao:hover {
+    transform: scale(1.05);
+}
+
+.mensagem__status{
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+    font-weight: bold;
+    color: aliceblue;
+    text-align: center;
+    margin: 1rem;
+}
+
 /* RODAPÉ */
 .rodape {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
     gap: 1rem;
     backdrop-filter: brightness(70%);
     width: 100%;
@@ -173,6 +262,26 @@ body {
         align-items: center;
         text-align: center;
     }
+
+    .corpo__contato{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .corpo__texto__contato{
+        font-size: 0.85rem;;
+    }
+
+    .formulario form {
+    max-width: 100%;
+  }
+
+  .formulario__input,
+  .formulario__input__mensagem {
+    font-size: 0.75rem;
+  }
+
 
     .corpo__texto {
         align-items: center;
