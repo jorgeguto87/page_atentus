@@ -27,7 +27,7 @@ body{
     flex-direction: column;
     align-content: center;
     text-align: center;
-    position: relative;
+    position: absolute;
     top: 70px;
     left: 0;
     width: 200px;
