@@ -21,7 +21,7 @@ body {
 
 /* MENU DE NAVEGAÇÃO */
 .topnav {
-    backdrop-filter: brightness(70%);
+    backdrop-filter: brightness(35%);
     display: none;
     flex-direction: column;
     position: absolute;
