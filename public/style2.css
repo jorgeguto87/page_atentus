@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('/assets/fundo2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: var(--fonte-secundaria);
+}
+
+/* MENU DE NAVEGAÇÃO */
+.topnav {
+    backdrop-filter: brightness(70%);
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 200px;
+    z-index: 1000;
+}
+
+.topnav a {
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.topnav a:hover {
+    background-color: #575757;
+}
+
+.topnav a.active {
+    background-color: rgba(0, 0, 255, 0.507);
+    color: white;
+}
+
+.icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.menu-img {
+    width: 40px;
+    height: auto;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
+
+.cabecalho__titulo {
+    font-family: var(--fonte-primaria);
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+
+.corpo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    margin: 1rem;
+    flex-wrap: wrap;
+}
+
+.corpo__texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    backdrop-filter: brightness(70%);
+    border-radius: 1rem;
+    max-width: 45rem;
+    padding: 1rem;
+    color: aliceblue;
+}
+
+.corpo__texto__titulo {
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.corpo__texto__subtitulo,
+.corpo__texto__paragrafo {
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.corpo__texto__paragrafo {
+    text-align: left;
+}
+
+.corpo__imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.corpo__img__imagem {
+    max-width: 30rem;
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+/* RODAPÉ */
+.rodape {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    backdrop-filter: brightness(70%);
+    width: 100%;
+    padding: 1rem;
+    margin-top: 2rem;
+    position: relative;
+    bottom: 0;
+}
+
+.texto__rodape {
+    font-size: 1rem;
+    color: aliceblue;
+    text-align: center;
+}
+
+.rodape__icones {
+    display: flex;
+    gap: 1rem;
+}
+
+.rodape__icones__icone {
+    max-height: 2rem;
+    width: auto;
+}
+
+/* === MEDIA QUERIES === */
+
+/* Tablets (≤1024px) */
+@media (max-width: 1024px) {
+    .corpo {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .corpo__texto {
+        align-items: center;
+        text-align: center;
+    }
+
+    .corpo__texto__paragrafo {
+        text-align: center;
+    }
+}
+
+/* Celulares (≤768px) */
+@media (max-width: 768px) {
+    .cabecalho__titulo {
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+
+    .corpo__img__imagem {
+        max-width: 90%;
+    }
+
+    .corpo__texto {
+        padding: 1rem;
+    }
+
+    .topnav {
+        width: 100%;
+        top: 60px;
+    }
+
+    .icon {
+        top: 5px;
+        left: 5px;
+    }
+
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .texto__rodape {
+        font-size: 0.9rem;
+    }
+
+    .rodape__icones {
+        gap: 0.5rem;
+    }
+}
+
+/* Dispositivos muito pequenos (≤480px) */
+@media (max-width: 480px) {
+    .cabecalho__titulo {
+        font-size: 1.5rem;
+    }
+
+    .corpo__texto__titulo {
+        font-size: 1.2rem;
+    }
+
+    .corpo__texto__subtitulo,
+    .corpo__texto__paragrafo {
+        font-size: 0.9rem;
+    }
+
+    .menu-img {
+        width: 30px;
+    }
+
+    .rodape__icones__icone {
+        max-height: 1.5rem;
+    }
+}
