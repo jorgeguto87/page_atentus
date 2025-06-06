@@ -30,3 +30,19 @@ function funcaoMenu() {
     x.style.display = "block";
   }
 }
+
+
+  // Seleciona todos os links do menu
+  const links = document.querySelectorAll('#myLinks a');
+
+  // Pega o caminho da URL atual (ex: /conferente.html)
+  const currentPage = window.location.pathname.split('/').pop();
+
+  links.forEach(link => {
+    if (link.getAttribute('href') === currentPage) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+

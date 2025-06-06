@@ -79,7 +79,7 @@ body {
 .corpo {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-evenly;
     gap: 2rem;
     margin: 1rem;
@@ -140,8 +140,13 @@ body {
     padding: 1rem;
     margin-top: 2rem;
     position: relative;
-    bottom: 0;
+    bottom: -50px;
+    left: 0;
+    right: 0;
 }
+
+
+
 
 .texto__rodape {
     font-size: 1rem;
@@ -175,7 +180,7 @@ body {
     }
 
     .corpo__texto__paragrafo {
-        text-align: center;
+        text-align: left;
     }
 }
 
