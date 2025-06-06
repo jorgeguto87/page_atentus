@@ -17,16 +17,66 @@ body{
     background-size: cover;
     background-attachment: fixed;
     box-sizing: border-box;
+    font-family: var(--fonte-secundaria);
+}
+
+/* MENU DE NAVEGAÇÃO */
+.topnav {
+    backdrop-filter: brightness(35%);
+    display: none;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    position: relative;
+    top: 70px;
+    left: 0;
+    width: 200px;
+    z-index: 1000;
+    margin: auto;
+}
+
+.topnav a {
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.topnav a:hover {
+    background-color: #575757;
+}
+
+.topnav a.active {
+    background-color: rgba(0, 0, 255, 0.507);
+    color: white;
+}
+
+.icon {
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.menu-img {
+    width: 40px;
+    height: auto;
 }
 
 .cabecalho{
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-direction: grid;
+    /*flex-wrap: wrap;*/
     justify-content: space-between;
     align-items: flex-start; 
     margin: 1rem;
     align-content: center;
+    position:relative;
+
 }
 
 
@@ -38,6 +88,8 @@ body{
     max-width: 28.75rem;
     height: auto;
     text-align: justify;
+    grid-row: 2;
+    grid-column: 1;
 }
 
 .cabecalho__legenda__texto{
@@ -53,12 +105,16 @@ body{
     text-align: left;
     padding: 1rem;
     inset-block-end: auto;
+    grid-row:3;
+    grid-column: 1;
 }
 
 .cabecalho__logo{
     width: 100%;
     max-width: 16.25rem;
     height: auto;
+    grid-row: 1;
+    grid-column: 5;
 }
 
 .cabecalho__itens{
@@ -69,6 +125,7 @@ body{
     gap: 1.5625rem;
     width: 100%;
     margin: 0;
+    
 }
 
 .cabecalho__itens__item{
@@ -292,6 +349,18 @@ text-align: center;
     height: auto;
   }
 
+  .topnav {
+        width: 100%;
+        top: 60px;
+        position:absolute;
+    }
+
+    .icon {
+        top: 5px;
+        left: 5px;
+        position:absolute;
+    }
+
   .cabecalho__logo {
     max-width: 13rem;
     min-width: 8rem;
@@ -350,4 +419,8 @@ text-align: center;
   .formulario__input__mensagem {
     font-size: 0.75rem;
   }
+
+  .menu-img {
+        width: 30px;
+    }
 }
