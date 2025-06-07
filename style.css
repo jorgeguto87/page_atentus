@@ -175,7 +175,7 @@ text-align: center;
 
 .barra__marcas__texto{
     font-family: var(--fonte-primaria);
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-weight: bold;
     color: aliceblue;
     text-align: center;
@@ -214,7 +214,7 @@ text-align: center;
 
 .chamada_contato__texto{
     font-family: var(--fonte-primaria);
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-weight: bold;
     color: aliceblue;
     text-align: center;
@@ -222,7 +222,7 @@ text-align: center;
 
 .chamada_contato__texto__legenda{
     font-family: var(--fonte-secundaria);
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     font-weight: bold;
     color: aliceblue;
     text-align: center;

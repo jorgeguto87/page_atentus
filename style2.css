@@ -137,6 +137,8 @@ body {
     text-align: left;
 }
 
+
+
 .corpo__imagem {
     display: flex;
     justify-content: center;
@@ -267,10 +269,28 @@ body {
         flex-direction: column-reverse;
         align-items: center;
         text-align: center;
+        margin: 0;
+        justify-content: center;
+
+    }
+
+    .corpo__img{
+        margin: 0;
+        justify-content: center;
+    }
+
+    .corpo__img__imagem{        
+        align-content: center;
+        margin: 0;
+        justify-content: center;
     }
 
     .corpo__texto__contato{
         font-size: 0.85rem;;
+    }
+
+    .mensagem__status{
+        font-size: 0.75rem;
     }
 
     .formulario form {

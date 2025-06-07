@@ -33,15 +33,16 @@
     <main class="corpo__contato">        
   <div class="formulario">
         <form id="form-contato">
-    <input class="formulario__input" type="text" name="name" placeholder="Nome" required>
-    <input class="formulario__input" type="email" name="email" placeholder="E-mail" required>
-    <input class="formulario__input" type="tel" name="phone" placeholder="Whatsapp" required>
-    <textarea class="formulario__input__mensagem" name="message" placeholder="Mensagem" required></textarea>
-    <button class="formulario__botao" type="submit">Enviar</button>
+    <input id="nome" class="formulario__input" type="text" name="name" placeholder="Nome" required>
+    <input id="email" class="formulario__input" type="email" name="email" placeholder="E-mail" required>
+    <input id="phone" class="formulario__input" type="tel" name="phone" placeholder="Whatsapp" required>
+    <textarea id="mensagem" class="formulario__input__mensagem" name="message" placeholder="Mensagem" required></textarea>
+    <button id="enviarBtn" class="formulario__botao" type="submit">Enviar</button>
+    <p class="mensagem__status" id="mensagem-status"></p>
         </form>
+     
     </div>
-    <div class="mensagem__status" id="mensagem-status">
-    </div>    
+       
     <div class="corpo__img">    
     <img src="/assets/page2/img_contato.png" alt="Imagem Fale Conosco" class="corpo__img__imagem__contato">
     </div>
